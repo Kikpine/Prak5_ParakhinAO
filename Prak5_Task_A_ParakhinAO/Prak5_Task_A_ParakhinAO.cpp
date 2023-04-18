@@ -76,6 +76,20 @@ int main()
 	}
 
 	int cnt = -1;
+	pair<int, int>temp;
+	while (flag == 1) {
+
+		for (int x = 1; x <= N ; x++) {
+			for (int y = 1; y <= M; y++) {
+				temp.first = x;
+				temp.second = y;
+				if (!marked.count(temp)) {
+					cell_processing(x, y);
+				}
+			}
+		}
+
+	int cnt = -1;
 	while (flag == 1) {
 
 		for (int x = 1; x <= N ; x++) {
