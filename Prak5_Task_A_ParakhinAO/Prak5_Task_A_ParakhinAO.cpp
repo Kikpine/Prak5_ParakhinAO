@@ -77,24 +77,12 @@ int main()
 
 	int cnt = -1;
 	pair<int, int>temp;
+
 	while (flag == 1) {
 
-		for (int x = 1; x <= N ; x++) {
+		for (int x = 1; x <= N; x++) {
 			for (int y = 1; y <= M; y++) {
-				temp.first = x;
-				temp.second = y;
-				if (!marked.count(temp)) {
-					cell_processing(x, y);
-				}
-			}
-		}
-
-	int cnt = -1;
-	while (flag == 1) {
-
-		for (int x = 1; x <= N ; x++) {
-			for (int y = 1; y <= M; y++) {
-				if (!marked.count({x,y})) {
+				if (!marked.count({ x,y })) {
 					cell_processing(x, y);
 				}
 			}
@@ -103,8 +91,6 @@ int main()
 		flag = 0;
 		pop_all_queue();
 		cnt++;
-		cout << endl << endl;
-
 	}
 
 
@@ -114,7 +100,7 @@ int main()
 	//	}
 	//	cout << endl;
 	//}
-
+	//cout << endl;
 
 	cout << cnt << endl;
 	return 0;
