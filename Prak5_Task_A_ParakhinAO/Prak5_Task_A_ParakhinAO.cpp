@@ -13,7 +13,6 @@
 using namespace std;
 
 bool arr[3002][3002];
-bool flag = 1;
 int Sum;
 queue <pair<int, int>> Q;
 set <pair<int, int>> S;
@@ -66,7 +65,7 @@ int main()
 		cin >> x >> y;
 		if (S.count({ x,y }) == 0) {
 			S.insert({ x,y });
-			Q.push({ x, y });
+			Q.push({ x,y });
 			arr[x][y] = 1;
 
 			Sum--;
@@ -84,7 +83,6 @@ int main()
 		}
 
 		cnt++;
-
 	}
 
 	cout << cnt << endl;
