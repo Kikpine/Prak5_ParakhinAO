@@ -22,19 +22,15 @@ void cell_processing(int a, int b) {
 	if (arr[a][b] == 1) {
 		if (arr[a-1][b] == 0) {
 			Q.push({a - 1,b});
-			marked.insert({ a,b });
 		}
 		if (arr[a][b-1] == 0) {
 			Q.push({a,b-1});
-			marked.insert({ a,b });
 		}
 		if (arr[a+1][b] == 0) {
 			Q.push({a+1,b});
-			marked.insert({ a,b });
 		}
 		if (arr[a][b+1] == 0) {
 			Q.push({a,b+1});
-			marked.insert({ a,b });
 		}
 	}
 
@@ -45,6 +41,7 @@ void pop_all_queue() {
 
 	while (!Q.empty()){
 		arr[Q.front().first][Q.front().second] = 1;
+		marked.insert({ Q.front().first, Q.front().second });
 		flag = 1;
 		
 		Q.pop();
@@ -73,22 +70,18 @@ int main()
 	for (int x = 0, y = 0, i = 0; i < quantity; i++) {
 		cin >> x >> y;
 		arr[x][y] = 1;
+		marked.insert({ x, y });
 	}
 
 	int cnt = -1;
-	pair<int, int>temp;
-
 	while (flag == 1) {
 
-		for (int x = 1; x <= N; x++) {
-			for (int y = 1; y <= M; y++) {
-				if (!marked.count({ x,y })) {
-					cell_processing(x, y);
-				}
-			}
+		for (auto it = marked.begin(); it != marked.end(); it++) {
+			cell_processing((*it).first, (*it).second);
 		}
 
 		flag = 0;
+		marked.clear();
 		pop_all_queue();
 		cnt++;
 	}
