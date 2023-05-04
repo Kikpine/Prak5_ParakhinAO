@@ -11,6 +11,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Prak5_Task_C_ParakhinAO", "
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Prak5_Task_D_ParakhinAO", "Prak5_Task_D_ParakhinAO\Prak5_Task_D_ParakhinAO.vcxproj", "{4B571669-D48E-41C3-9749-563CBC67963E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Prak5_Task_E_ParakhinAO", "Prak5_Task_E_ParakhinAO\Prak5_Task_E_ParakhinAO.vcxproj", "{9FF49D5E-7F9A-4C57-8F7C-6F2F86E39832}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -51,6 +53,14 @@ Global
 		{4B571669-D48E-41C3-9749-563CBC67963E}.Release|x64.Build.0 = Release|x64
 		{4B571669-D48E-41C3-9749-563CBC67963E}.Release|x86.ActiveCfg = Release|Win32
 		{4B571669-D48E-41C3-9749-563CBC67963E}.Release|x86.Build.0 = Release|Win32
+		{9FF49D5E-7F9A-4C57-8F7C-6F2F86E39832}.Debug|x64.ActiveCfg = Debug|x64
+		{9FF49D5E-7F9A-4C57-8F7C-6F2F86E39832}.Debug|x64.Build.0 = Debug|x64
+		{9FF49D5E-7F9A-4C57-8F7C-6F2F86E39832}.Debug|x86.ActiveCfg = Debug|Win32
+		{9FF49D5E-7F9A-4C57-8F7C-6F2F86E39832}.Debug|x86.Build.0 = Debug|Win32
+		{9FF49D5E-7F9A-4C57-8F7C-6F2F86E39832}.Release|x64.ActiveCfg = Release|x64
+		{9FF49D5E-7F9A-4C57-8F7C-6F2F86E39832}.Release|x64.Build.0 = Release|x64
+		{9FF49D5E-7F9A-4C57-8F7C-6F2F86E39832}.Release|x86.ActiveCfg = Release|Win32
+		{9FF49D5E-7F9A-4C57-8F7C-6F2F86E39832}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
